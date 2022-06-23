@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/img/LOGO TEO.png" class="logo" alt="" />
+      <div class="row">
+        <div class="col">
+          <div class="feature-img">
+            <img src="/img/1.png" width="100%" />
+            <img
+              src="/img/play.png"
+              class="play"
+              onclick="playVideo('https://www.youtube.com/embed/SKJJN7lu1as')"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="/img/2.png" />
+              <img
+                src="/img/play.png"
+                class="play-mini"
+                alt=""
+                onclick="playVideo('https://www.youtube.com/embed/iLQ1Xso_fDo')"
+              />
+            </div>
+            <p>
+              <b>Petualangan Merlin</b> - Tentang seorang penyihir yang tersesat
+              di dunia asing baginya, yaitu Indonesia.
+            </p>
+          </div>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="/img/3.png" />
+              <img
+                src="/img/play.png"
+                class="play-mini"
+                alt=""
+                onclick="playVideo('https://www.youtube.com/embed/TcI_qhHmngY')"
+              />
+            </div>
+            <p>
+              <b>Rasa Malas</b> - Bagaimana agar tidak malas? Video ini akan
+              menjawabnya dengan cara yang menyenangkan.
+            </p>
+          </div>
+          <div class="small-img-row">
+            <div class="small-img">
+              <img src="/img/4.png" />
+              <img
+                src="/img/play.png"
+                class="play-mini"
+                alt=""
+                onclick="playVideo('https://www.youtube.com/embed/RDK3On9GNkI')"
+              />
+            </div>
+            <p>
+              <b>Get Up</b> - Mentari harus menerima kenyataan bahwa
+              cita-citanya gagal. Bagaimana dia akan bangkit?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+      <img src="/img/close.png" class="close-btn" onclick="stopVideo()" />
+      <iframe
+        width="1120"
+        height="630"
+        src="https://www.youtube.com/embed/SKJJN7lu1as"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        id="myVideo"
+      ></iframe>
+    </div>
+    <script>
+      var videoPlayer = document.getElementById("videoPlayer");
+      var myVideo = document.getElementById("myVideo");
+
+      function stopVideo() {
+        videoPlayer.style.display = "none";
+      }
+
+      function playVideo(file) {
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+        scrollTo(0, 700);
+      }
+    </script>
+  </body>
+</html>
