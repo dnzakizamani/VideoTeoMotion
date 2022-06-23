@@ -6,96 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Animation</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <img src="/img/LOGO TEO.png" class="logo" alt="" />
-      <div class="row">
-        <div class="col">
-          <div class="feature-img">
-            <img src="/img/1.png" width="100%" />
-            <img
-              src="/img/play.png"
-              class="play"
-              onclick="playVideo('https://www.youtube.com/embed/SKJJN7lu1as')"
-            />
-          </div>
-        </div>
-        <div class="col">
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="/img/2.png" />
+    <nav>
+      <div class="logo" style="flex-basis: 1050px">
+        <a href="/">Teo Motion</a>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="centerlize">
+        <h1>TEO GALLERY</h1>
+        <p>Enjoy Our Animations</p>
+      </div>
+      <hr />
+      <div class="container">
+        <img src="/img/LOGO TEO.png" class="logo" alt="" />
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="feature-img">
+              <img src="/img/1.png" width="100%" />
               <img
                 src="/img/play.png"
-                class="play-mini"
-                alt=""
-                onclick="playVideo('https://www.youtube.com/embed/iLQ1Xso_fDo')"
+                class="play"
+                onclick="playVideo('https://www.youtube.com/embed/SKJJN7lu1as')"
               />
             </div>
-            <p>
-              <b>Petualangan Merlin</b> - Tentang seorang penyihir yang tersesat
-              di dunia asing baginya, yaitu Indonesia.
-            </p>
           </div>
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="/img/3.png" />
-              <img
-                src="/img/play.png"
-                class="play-mini"
-                alt=""
-                onclick="playVideo('https://www.youtube.com/embed/TcI_qhHmngY')"
-              />
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="small-img-row">
+              <div class="small-img">
+                <img src="/img/2.png" />
+                <img
+                  src="/img/play.png"
+                  class="play-mini"
+                  alt=""
+                  onclick="playVideo('https://www.youtube.com/embed/iLQ1Xso_fDo')"
+                />
+              </div>
+              <p>
+                <b>Petualangan Merlin</b> - Tentang seorang penyihir yang
+                tersesat di dunia asing baginya, yaitu Indonesia.
+              </p>
             </div>
-            <p>
-              <b>Rasa Malas</b> - Bagaimana agar tidak malas? Video ini akan
-              menjawabnya dengan cara yang menyenangkan.
-            </p>
-          </div>
-          <div class="small-img-row">
-            <div class="small-img">
-              <img src="/img/4.png" />
-              <img
-                src="/img/play.png"
-                class="play-mini"
-                alt=""
-                onclick="playVideo('https://www.youtube.com/embed/RDK3On9GNkI')"
-              />
+            <div class="small-img-row">
+              <div class="small-img">
+                <img src="/img/3.png" />
+                <img
+                  src="/img/play.png"
+                  class="play-mini"
+                  alt=""
+                  onclick="playVideo('https://www.youtube.com/embed/TcI_qhHmngY')"
+                />
+              </div>
+              <p>
+                <b>Rasa Malas</b> - Bagaimana agar tidak malas? Video ini akan
+                menjawabnya dengan cara yang menyenangkan.
+              </p>
             </div>
-            <p>
-              <b>Get Up</b> - Mentari harus menerima kenyataan bahwa
-              cita-citanya gagal. Bagaimana dia akan bangkit?
-            </p>
+            <div class="small-img-row">
+              <div class="small-img">
+                <img src="/img/4.png" />
+                <img
+                  src="/img/play.png"
+                  class="play-mini"
+                  alt=""
+                  onclick="playVideo('https://www.youtube.com/embed/RDK3On9GNkI')"
+                />
+              </div>
+              <p>
+                <b>Get Up</b> - Mentari harus menerima kenyataan bahwa
+                cita-citanya gagal. Bagaimana dia akan bangkit?
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-player" id="videoPlayer">
-      <img src="/img/close.png" class="close-btn" onclick="stopVideo()" />
-      <iframe
-        width="1120"
-        height="630"
-        src="https://www.youtube.com/embed/SKJJN7lu1as"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        id="myVideo"
-      ></iframe>
-    </div>
+      <div class="video-player" id="videoPlayer">
+        <img src="/img/close.png" class="close-btn" onclick="stopVideo()" />
+        <iframe
+          width="1120"
+          height="630"
+          src="https://www.youtube.com/embed/SKJJN7lu1as"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          id="myVideo"
+        ></iframe>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-footer-all">
+        <div class="container-body">
+          <div class="colum1">
+            <h1>About</h1>
+
+            <p>
+              <b>Tim ini bernama Teo Motion</b>
+            </p>
+            <p>
+              Tim ini dibentuk sebagai wadah bagi teman-teman yang tertarik
+              dengan animasi dan ingin menyalurkan hobi ataupun bakatnya.
+              <br />
+              Tak ada peraturan dan target khusus di tim ini. Asalkan kita
+              senang berkarya maka semua terpenuhi.
+            </p>
+          </div>
+
+          <div class="colum2">
+            <p>
+              <br />
+              <br />
+              Ketua Tim : D.N. Zaki Zamani <br />
+              Ilustrator : Nabila Anindya Hassya <br />
+              Animator : D.N. Zaki Zamani <br />
+              Sound Editor : Jihan Luthfia & M. Adhitya Putra <br />
+              VFX : M. Adhitya Putra & D.N. Zaki Zamani <br />
+              Sekretariat : Jihan Luthfia
+            </p>
+          </div>
+
+          <div class="colum3">
+            <h1>Social Media</h1>
+
+            <div class="row">
+              <img src="icon/facebook.png" />
+              <label>dnzakizamani</label>
+            </div>
+            <div class="row">
+              <img src="icon/twitter.png" />
+              <label>zamanizaki</label>
+            </div>
+            <div class="row">
+              <img src="icon/instagram.png" />
+              <label>zamani_zaki</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-footer">
+        <div class="footer">
+          <div class="copyright">
+            © 2022 D.N. Zaki Zamani | <a href="">DN</a>
+          </div>
+
+          <div class="information">
+            <a href="">Sukses</a> | <a href="">Ya</a> |
+            <a href="">Allah</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script>
       var videoPlayer = document.getElementById("videoPlayer");
       var myVideo = document.getElementById("myVideo");
 
       function stopVideo() {
         videoPlayer.style.display = "none";
+        scrollTo(0, 800);
       }
 
       function playVideo(file) {
         myVideo.src = file;
         videoPlayer.style.display = "block";
-        scrollTo(0, 700);
+        scrollTo(0, 1500);
       }
     </script>
   </body>
